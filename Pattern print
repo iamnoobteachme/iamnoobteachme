@@ -1,0 +1,28 @@
+/*Question 1)
+WAP to print the following pattern:
+          5
+        4 5
+      3 4 5
+    2 3 4 5
+  1 2 3 4 5
+question2)
+WAP to display the triangular numbers in the range between two positive integers numbers(n1 and n2,n1<n2) entered by user.*/
+	#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int i,j,k,n;
+	printf("Enter the number of rows:");
+	scanf("%d",&n);
+	for(i=n;i>=1;i--){
+		for(k=1;k<=i-1;k++)
+		{
+			printf("\t");
+		}
+		for(j=i;j<=n;j++)
+		{
+			printf("%d\t",j);
+		}
+		printf("\n");
+	}
+}
